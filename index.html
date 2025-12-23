@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MANJII iOS – Key Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>MANJII iOS</h1>
+  <span>LICENSE KEY FOR INJECTOR MANJII V2</span>
+</header>
+
+<main>
+  <!-- GENERATOR -->
+  <section class="card">
+    <h2>KEY GENERATOR MANJII iOS</h2>
+
+    <select id="duration">
+      <option value="1">1 Hari</option>
+      <option value="7">7 Hari</option>
+      <option value="30">30 Hari</option>
+    </select>
+
+    <button onclick="generateKey()">GENERATE KEY</button>
+
+    <div class="result" id="result">
+      <label>KEY</label>
+      <div class="copy-row">
+        <input id="keyOutput" readonly>
+        <button class="copy-icon" onclick="copyText('keyOutput')">📋</button>
+      </div>
+
+      <label>EXPIRED</label>
+      <div class="copy-row">
+        <input id="expiredOutput" readonly>
+        <button class="copy-icon" onclick="copyText('expiredOutput')">📋</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADMIN -->
+  <section class="card">
+    <h2>ADMIN PANEL MANJII</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Key</th>
+            <th>Durasi</th>
+            <th>Expired</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="adminTable"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
